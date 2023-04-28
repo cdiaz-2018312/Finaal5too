@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1152.0" style="-fx-background-color: #000043;" stylesheets="@../resources/css/EstiloMenuPrincipal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.emanueljolonCarlosDiaz.controllers.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="405.0" fitWidth="715.0" layoutX="219.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/images/control.png" />
+         </image>
+      </ImageView>
+      <Pane id="pane1" layoutX="-258.0" layoutY="171.0" prefHeight="140.0" prefWidth="700.0" rotate="145.6" />
+      <Pane id="pane3" layoutX="692.0" layoutY="19.0" prefHeight="140.0" prefWidth="444.0" rotate="-36.1" />
+      <Pane id="pane2" layoutX="319.0" layoutY="569.0" prefHeight="140.0" prefWidth="880.0" rotate="142.1" />
+      <Pane id="pane4" layoutX="15.0" layoutY="502.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="423.0" rotate="144.9" />
+      <MenuBar id="menu-bar" layoutX="74.0" layoutY="66.0" prefHeight="52.0" prefWidth="381.0" AnchorPane.bottomAnchor="530.0" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="697.0" AnchorPane.topAnchor="66.0">
+        <menus>
+          <Menu id="menu-modulos" mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#clicAlumnos" styleClass="item-modulos" text="Alumnos" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicInstructores" styleClass="item-modulos" text="Instructores" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicSalones" styleClass="item-modulos" text="Salones" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicCarreras" styleClass="item-modulos" text="Carreras Tecnicas" />
+                  <MenuItem mnemonicParsing="false" styleClass="item-modulos" text="Horarios" />
+                  <MenuItem mnemonicParsing="false" styleClass="item-modulos" text="Cursos" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicAsignacionAlumnos" styleClass="item-modulos" text="Asignacion Alumnos" />
+            </items>
+          </Menu>
+            <Menu id="menu-signo" mnemonicParsing="false" text="Reportes ">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#clicReporteAlumnos" text="Reporte Alumnos" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicReporteSalones" text="Reporte Salones" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicReporteInsructores" text="Reporte Instructores" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicReporteAsignacionAlumnos" text="Reporte Asignación Alumnos" />
+               </items>
+            </Menu>
+            <Menu id="menu-signo" mnemonicParsing="false" text="Cerrar">
+               <items>
+                  <MenuItem fx:id="btnCerrar" mnemonicParsing="false" onAction="#clicCerrar" text="X" />
+               </items>
+            </Menu>
+          <Menu id="menu-signo" mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem fx:id="btnSobre" mnemonicParsing="false" onAction="#clicSobre" text="Desarrollador..." />
+            </items>
+          </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </MenuBar>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

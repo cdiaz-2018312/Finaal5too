@@ -1,0 +1,54 @@
+/* 
+    Created on : 6/04/2022, 22:47:25
+    Author     : etzul
+*/
+
+#menu-bar{
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(to bottom, #F86E00, #E8A841);
+    -fx-font-size: 15.0 pt;
+
+}
+
+#menu-modulos{
+    -fx-font-size: 20.0 pt;
+    -fx-font-weight: bold; 
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: linear-gradient(to bottom, #F86E00, #E8A841);
+}
+
+.item-modulos{
+    -fx-background-radius: 10 10 10 10;
+}
+
+#menu-signo{
+    -fx-font-size: 20.0 pt;
+    -fx-font-weight: bold; 
+}
+
+
+
+#pane1{
+    -fx-background-radius: 80 0 0 80;
+    -fx-background-color: #17202A;
+    -fx-opacity: 0.4;   
+}
+
+#pane2{
+    -fx-background-radius: 80 0 0 80;
+    -fx-background-color: #17202A;
+    -fx-opacity: 0.4;  
+}
+
+
+#pane3{
+    -fx-background-radius: 80 0 0 80;
+    -fx-background-color: #17202A;
+    -fx-opacity: 0.4;
+}
+
+#pane4{
+    -fx-background-radius: 80 0 0 80;
+    -fx-background-color: #17202A;
+    -fx-opacity: 0.4; 
+}

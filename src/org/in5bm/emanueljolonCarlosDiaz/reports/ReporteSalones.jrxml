@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Plantilla" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="772154f8-35a6-4a76-a4ba-39a167bb1c3b">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="ControlAcademico IN5BM"/>
+	<queryString language="SQL">
+		<![CDATA[call sp_salones_read()]]>
+	</queryString>
+	<field name="id_salon" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="id_salon"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_salon"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salones"/>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="descripcion"/>
+		<property name="com.jaspersoft.studio.field.label" value="descripcion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salones"/>
+	</field>
+	<field name="capacidad_max" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="capacidad_max"/>
+		<property name="com.jaspersoft.studio.field.label" value="capacidad_max"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salones"/>
+	</field>
+	<field name="edificio" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="edificio"/>
+		<property name="com.jaspersoft.studio.field.label" value="edificio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salones"/>
+	</field>
+	<field name="nivel" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="nivel"/>
+		<property name="com.jaspersoft.studio.field.label" value="nivel"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salones"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<image>
+				<reportElement x="-10" y="10" width="150" height="105" uuid="720c6e63-a6f7-4400-a033-257f5f1c1397"/>
+				<imageExpression><![CDATA["C:/Users/charl/Documents/NetBeansProjects/in5bm-control-academico-emanuel-jolon-Carlos-diaz/src/org/in5bm/emanueljolonCarlosDiaz/resources/images/control.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-8" y="10" width="600" height="30" uuid="d6f7c4ee-f702-4985-aaf0-d21ee0d45db1"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="16"/>
+				</textElement>
+				<text><![CDATA[Mountain Control ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="30" width="270" height="30" uuid="0427747f-97b1-4929-851e-717e958792f5"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[6 venida 13-54 zona 7, Colonia Landívar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="242" y="47" width="100" height="13" uuid="4e9037b3-5a2d-459f-a1af-0b07a7cbd74c"/>
+				<text><![CDATA[Tel: 324123121123]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="60" width="210" height="30" uuid="9a6cbdba-63a0-47a2-a75c-d73731d463c8"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[NIT: 312423-k]]></text>
+			</staticText>
+			<textField pattern="M/d/yy">
+				<reportElement x="490" y="110" width="100" height="30" uuid="77757937-741e-4a6f-9666-c94f21a77efc"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="17" width="610" height="30" uuid="9110436e-9c09-4944-b569-73fda150dc53"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bell MT" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salones]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="44" splitType="Stretch">
+			<line>
+				<reportElement x="-8" y="40" width="588" height="1" uuid="e023807b-a7d4-4abe-b643-94a6aa580ee7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="22" y="0" width="40" height="30" uuid="7ee8d9b5-c118-4c68-8423-1214fb1079a3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ff4ebf1-80c6-4fbf-a918-94d028c2a8d1"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="100" height="30" uuid="cb26ef5e-5fbd-49d9-8bbc-db16ba450d2a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="838631db-3887-4cd3-9c36-07bddf7853e7"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Descripcion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="0" width="150" height="40" uuid="3d9a887a-0ebb-4a56-8fed-2ebccb8df940">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c01c13f-9771-4416-bae1-91df170c3d4e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bodoni MT Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Capacidad Maxima]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="0" width="60" height="30" uuid="33d4bdec-f709-4144-9279-f3a524ae018e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2a5cd4dc-4fd8-4349-a089-bfa914bb3a83"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Edificio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="62" height="30" uuid="8d576f27-180e-4f03-a77c-2bf686e6b749">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cc862209-bbc6-4969-aacd-9ca3866da7f6"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Bodoni MT Black" size="14"/>
+				</textElement>
+				<text><![CDATA[Nivel]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="22" y="9" width="58" height="30" uuid="dde32c41-6d73-42e6-a00a-9a1232acca64">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1ff4ebf1-80c6-4fbf-a918-94d028c2a8d1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id_salon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="10" width="100" height="30" uuid="4540a66c-9c42-44d2-92fd-b462fc6aeac0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="838631db-3887-4cd3-9c36-07bddf7853e7"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="290" y="10" width="100" height="30" uuid="87b40d50-f430-4cd3-ae2b-73309876ed30">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5c01c13f-9771-4416-bae1-91df170c3d4e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{capacidad_max}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="10" width="70" height="30" uuid="92a27d68-22a8-4117-9ef6-c9fd99b61b0a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2a5cd4dc-4fd8-4349-a089-bfa914bb3a83"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{edificio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="520" y="11" width="100" height="30" uuid="1507f816-5811-4498-a92e-98ca4b156bcd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cc862209-bbc6-4969-aacd-9ca3866da7f6"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nivel}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement x="-8" y="10" width="588" height="1" uuid="f785e086-7ae0-4dcb-a1f3-dbfa67fde351">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="119" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="10" width="110" height="100" uuid="2e24a0b7-b36d-4e42-b65d-626bb216d127"/>
+				<imageExpression><![CDATA["C:/Users/charl/Documents/NetBeansProjects/in5bm-control-academico-emanuel-jolon-Carlos-diaz/src/org/in5bm/emanueljolonCarlosDiaz/resources/images/portapapeles.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-20" y="33" width="612" height="17" uuid="80372596-c868-47e1-bf18-4d7d6b42bced"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Carlos Eduardo Diaz Chacón]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="67" width="612" height="17" uuid="44ff3b97-7a5e-40f9-b8f2-557ea0b792d9"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ carné: 2018312]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="80" width="612" height="17" uuid="ad9dc276-04ea-4ec4-b549-5e92e52f0f78"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[IN5BM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-21" y="50" width="612" height="17" uuid="aff762b0-681d-4b30-a1b3-7acc0c117a1b"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[cdiaz-2018312@kinal.edu.gt]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

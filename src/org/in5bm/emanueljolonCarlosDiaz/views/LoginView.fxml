@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="369.0" style="-fx-border-radius: 20,20,20,20;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.emanueljolonCarlosDiaz.controllers.LoginController">
+   <children>
+      <Polygon fill="#561fff" layoutX="49.0" layoutY="277.0" points="320.0, -216.0, 227.29290771484375, -280.0, 320.0, -277.0" stroke="BLACK" strokeType="INSIDE" />
+      <VBox layoutX="5.0" layoutY="5.0" prefHeight="191.0" prefWidth="359.0" style="-fx-background-radius: 20;">
+         <children>
+            <Label alignment="CENTER" prefHeight="76.0" prefWidth="359.0" style="-fx-background-radius: 20 20 20 20;" text="Bienvenido" textFill="#d31919">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="128.0" prefWidth="375.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="103.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="283.0" minWidth="10.0" prefWidth="258.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtUsuario" alignment="CENTER" prefHeight="25.0" prefWidth="120.0" GridPane.columnIndex="1" />
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="84.0" text="Usuario:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="182.0" text="Contraseña:" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="162.2928924560547" endY="-1.0001307725906372" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Line endX="206.87867736816406" endY="-0.31038999557495117" startX="104.58578491210938" startY="-0.31066739559173584" GridPane.rowIndex="1" />
+                  <PasswordField fx:id="txtContraseña" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+      <Button fx:id="btnIngresar" layoutX="110.0" layoutY="205.0" mnemonicParsing="false" onAction="#clicIngresar" prefHeight="25.0" prefWidth="160.0" text="Ingresar" />
+      <Polygon fill="#561fff" layoutX="39.0" layoutY="266.0" points="-39.0, -22.0, -39.0, -74.0, 59.29290771484375, -22.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+/* 
+    Created on : 7/04/2022, 10:00:11
+    Author     : Emanuel Esaú Jolón
+    Ca         : 2021058
+    
+*/
+
+#panel-navegacion{
+    -fx-background-color:  #000043;
+    
+}
+
+#pane-entidad{
+    -fx-background-color:  #A93226;
+    -fx-background-radius: 0 0 50 50;
+    
+}
+
+.botones-crud{
+    -fx-background-color: #000043;
+    -fx-text-fill: #FFFFFF;
+}
+
+.botones-crud:hover{
+    -fx-background-color: #99A3A4;
+    -fx-text-fill: #17202A;
+    
+}
